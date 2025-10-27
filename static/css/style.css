@@ -1,4 +1,17 @@
-/* @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"); */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/l/font?kit=XRXV3I6Li01BKof4N_TCRurvUh4iKlRSVAEkvrPpYlDJOo67TRltlTnNmGiEQ60VGLrAIIyxESMPF9v63IljLVMzmVvMSfb5cp1KYSOexnYUArIxSQ&skey=27bb6aa8eea8a5e7&v=v32) format('woff2');
+}
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/l/font?kit=XRXV3I6Li01BKof4N_TCRurvUh4iKlRSVAEkvrPpYlDJOo67TRltlTnNmGiEQ60VGLrAIIyxESMPF9v63IljLVMzmVvMSfb5cp1KYSOexnYUArIxSQ&skey=27bb6aa8eea8a5e7&v=v32) format('woff2');
+}
 
 * {
     margin: 0;

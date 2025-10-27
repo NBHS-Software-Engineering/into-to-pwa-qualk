@@ -1,9 +1,11 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+from flask_compress import Compress
 import database_manager as dbHandler
 
 app = Flask(__name__)
+Compress(app)
 
 @app.route("/index.html", methods=["GET"])
 @app.route("/", methods=["POST", "GET"])
