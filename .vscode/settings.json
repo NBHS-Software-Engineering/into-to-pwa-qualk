@@ -1,28 +1,29 @@
 {
-  "files.autoSave": "onFocusChange",
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.fontSize": 18,
-  "extensions.ignoreRecommendations": true,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "window.restoreWindows": "preserve",
-  "workbench.editorAssociations": {
-    "*.md": "vscode.markdown.preview.editor"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
-  },
-  "workbench.colorTheme": "Default Dark+",
-  "workbench.iconTheme": "vscode-icons",
-  "github.copilot.enable": {
-    "python": false,
-    "html": false,
-    "css": false,
-    "SQL": false
-  },
-  "chat.agent.enabled": false,
-  "github.copilot.chat.participant.alwaysInclude": [
-    "github/copilot-instructions.md"
-  ]
+	"files.autoSave": "onFocusChange",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.fontSize": 18,
+	"extensions.ignoreRecommendations": true,
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"window.restoreWindows": "preserve",
+	"workbench.editorAssociations": {
+		"*.md": "vscode.markdown.preview.editor"
+	},
+	"editor.defaultFormatter": "astral-sh.ty",
+	"[python]": {
+		"editor.defaultFormatter": "astral-sh.ty"
+	},
+	"workbench.colorTheme": "Default Dark Modern",
+	"workbench.iconTheme": "vscode-icons",
+	"github.copilot.enable": {
+		"python": false,
+		"html": false,
+		"css": false,
+		"SQL": false
+	},
+	"chat.agent.enabled": false,
+	"github.copilot.chat.participant.alwaysInclude": [
+		"github/copilot-instructions.md"
+	],
+	"python-envs.pythonProjects": []
 }
