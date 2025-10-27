@@ -2,7 +2,12 @@
 <h1>Join our mailing list</h1>
 {% if is_done %}
 <h2>Thank you for signing up!</h2>
-{% else %}
+{% elif is_duplicate %}
+<div class="alert alert-warning">
+    This email address is already registered. Please use a different email.
+</div>
+{% endif %}
+{% if not is_done %}
 <form action="/add.html" method="POST" class="box">
     <div>
         <label class="form-label">Email address</label>

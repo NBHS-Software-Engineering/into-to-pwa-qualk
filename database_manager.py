@@ -7,9 +7,17 @@ def listExtension():
     con.close()
     return data
 
-def insertContact(email,name):
+def insertContact(email, name):
     con = sql.connect("database/data_source.db")
     cur = con.cursor()
-    cur.execute("INSERT INTO contact_list (email,name) VALUES (?,?)", (email,name))
-    con.commit()
+    try:
+        cur.execute("INSERT INTO contact_list (email,name) VALUES (?,?)", (email, name))
+        con.commit()
+        result = True
+    except sql.IntegrityError as e:
+        if "UNIQUE constraint failed: contact_list.email" in str(e): # duplicate check
+            result = "duplicate"
+        else:
+            result = False
     con.close()
+    return result
