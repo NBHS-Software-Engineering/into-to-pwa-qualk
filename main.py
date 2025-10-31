@@ -28,5 +28,9 @@ def add():
     else:
         return render_template("/add.html", is_done=False)
 
+@app.route("/about.html", methods=["GET"])
+def about():
+    return render_template("/about.html")
+
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)

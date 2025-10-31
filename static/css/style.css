@@ -64,6 +64,8 @@ nav ul li a:hover {
 nav h1 {
     color: #106d69;
     margin-bottom: 0.5rem;
+    margin-block: 0.67em;
+    font-size: 2em;
 }
 
 .container {
@@ -105,7 +107,7 @@ nav h1 {
 .card-about {
     text-overflow: ellipsis;
     width: 15rem;
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
     margin-bottom: 1rem;
 }
@@ -118,7 +120,7 @@ nav h1 {
     cursor: pointer;
     font-size: 1.25rem;
     margin: 0 1rem;
-    padding: 0.25rem 2rem;
+    padding: 0.5rem 2.5rem;
     transition: all 0.25s ease-in-out;
     background: hsl(110, 21%, 93%);
     color: hsl(141, 100%, 22%);
@@ -131,6 +133,17 @@ nav h1 {
     background: hsl(111, 21%, 86%);
 }
 
+.card-link {
+    min-width: 48px;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
 .about-container {
     font-size: 1.25rem;
     margin-top: 2rem;
@@ -139,7 +152,7 @@ nav h1 {
 }
 
 form {
-    margin-top:50px
+    margin-top: 50px
 }
 .form-control {
     font-size: 1rem;
@@ -149,5 +162,5 @@ form {
     margin: 1rem;
     background: transparent;
     transition: all 0.2s;
-    width:100%;
+    width: 100%;
 }
